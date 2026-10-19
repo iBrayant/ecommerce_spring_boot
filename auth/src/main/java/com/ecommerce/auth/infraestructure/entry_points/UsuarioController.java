@@ -96,7 +96,6 @@ public class UsuarioController {
         }
     }
 
-    // Body: { "saldo": 5000 } -> en este endpoint el campo "saldo" es el monto a sumar
     @PostMapping("/{id}/saldo/recargar")
     public ResponseEntity<?> recargarSaldo(@PathVariable("id") String id,
                                            @RequestBody UsuarioData usuarioData) {
@@ -110,7 +109,6 @@ public class UsuarioController {
         }
     }
 
-    // Body: { "saldo": 5000 } -> en este endpoint el campo "saldo" es el monto a restar
     @PostMapping("/{id}/saldo/descontar")
     public ResponseEntity<?> descontarSaldo(@PathVariable("id") String id,
                                             @RequestBody UsuarioData usuarioData) {
