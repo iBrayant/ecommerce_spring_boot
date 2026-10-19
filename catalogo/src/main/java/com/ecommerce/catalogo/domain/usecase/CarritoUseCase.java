@@ -10,13 +10,11 @@ import com.ecommerce.catalogo.domain.model.Producto;
 import com.ecommerce.catalogo.domain.model.gateway.CarritoGateway;
 import com.ecommerce.catalogo.domain.model.gateway.UsuarioGateway;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.time.LocalDateTime;
 
-@Slf4j
 @RequiredArgsConstructor
 public class CarritoUseCase {
 
@@ -135,7 +133,7 @@ public class CarritoUseCase {
         try {
             usuarioGateway.devolverSaldo(usuarioId, monto);
         } catch (RuntimeException e) {
-            log.error("No se pudo devolver {} al usuario {}. Revisar el saldo manualmente", monto, usuarioId, e);
+            // Si la devolucion falla se ignora para no tapar el error original de la compra
         }
     }
 
