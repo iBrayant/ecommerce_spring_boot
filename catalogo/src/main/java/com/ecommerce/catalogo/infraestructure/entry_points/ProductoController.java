@@ -29,6 +29,8 @@ public class ProductoController {
             return new ResponseEntity<>(productoUseCase.crearProducto(producto), HttpStatus.CREATED);
         } catch (IllegalArgumentException e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        } catch (DataIntegrityViolationException e) {
+            return new ResponseEntity<>("Ya existe un producto con ese nombre", HttpStatus.CONFLICT);
         }
     }
 
@@ -54,6 +56,8 @@ public class ProductoController {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
         } catch (IllegalArgumentException e) {
             return new ResponseEntity<>(e.getMessage(), HttpStatus.BAD_REQUEST);
+        } catch (DataIntegrityViolationException e) {
+            return new ResponseEntity<>("Ya existe un producto con ese nombre", HttpStatus.CONFLICT);
         }
     }
 
