@@ -1,0 +1,11 @@
+spring.application.name=notification
+server.port=8082
+
+# Copia este archivo como application.properties y completa tus credenciales.
+# application.properties NO se sube a git (esta en .gitignore).
+# Credenciales de Twilio (https://console.twilio.com)
+twilio.api-url=https://api.twilio.com
+twilio.account-sid=ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+twilio.auth-token=tu-auth-token
+# Numero de prueba que te da Twilio, con indicativo. Ej: +15551234567
+twilio.from-number=+15551234567

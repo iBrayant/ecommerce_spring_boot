@@ -60,7 +60,7 @@ public class UsuarioUseCase {
         if (usuarioExistente == null) {
             return null;
         }
-        // El saldo no se modifica desde el CRUD general, se conserva el que ya tiene
+
         usuario.setSaldo(usuarioExistente.getSaldo());
         if (usuario.getClave() != null) {
             usuario.setClave(encrypterGateway.encrypt(usuario.getClave()));

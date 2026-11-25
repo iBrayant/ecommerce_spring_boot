@@ -1,0 +1,41 @@
+Proyecto con core específico 
+
+* Mínimo 3 microservicios 
+* Una base de datos 
+* Un sistema de notificación 
+* Por microservicio 5 APIs diferentes al CRUD
+* Pruebas unitarias con cobertura mínima del 80%
+* Mínimo consumir 2 APIs externas
+* Desplegado todo el proyecto
+
+
+[11:59 a. m., 7/11/2026] Brayant Vásquez: Artículo 
+
+Conceptos y tecnologías asociado a investigaciones fundamento teórico el porque solid por ejemplo es bueno 
+
+Metodología MER diagrama de arquitectura diagrama como se hizo 
+
+Resultados 
+
+El despliegue, métricas anexos pruebas cargas de estrés 
+
+Por el objetivo spec una conclusión 
+
+Referencias
+[12:06 p. m., 7/11/2026] Brayant Vásquez: Desde el 23 hasta el 26 de noviembre plazo máximo sustenta
+
+
+[8:09 a. m., 7/11/2026] Profe Frank Ortegon: Proyecto con core específico 
+
+* Mínimo 3 microservicios 
+* Una base de datos 
+* Un sistema de notificación 
+* Por microservicio 5 APIs diferentes al CRUD
+* Pruebas unitarias con cobertura mínima del 80%
+* Mínimo consumir 2 APIs externas
+* Desplegado todo el proyecto
+[8:15 a. m., 7/11/2026] Profe Frank Ortegon: Autónomo : Pruebas carga y de estrés de sus APIs
+[8:15 a. m., 7/11/2026] Profe Frank Ortegon: El tiempo de respuesta de las APIs no debe exceder los 500ms
+[8:26 a. m., 7/11/2026] Profe Frank Ortegon: Articulo en formato IEEE presentando los resultados de proyecto
+[8:28 a. m., 7/11/2026] Profe Frank Ortegon: Max 4 páginas
+[8:29 a. m., 7/11/2026] Profe Frank Ortegon: Latex
