@@ -130,7 +130,15 @@ twilio.from-number=+1...           # Número de Twilio que envía el SMS
 - **Account SID** y **Auth Token**: página de inicio de la consola (*Account details*).
 - **From number**: *Send an SMS → Try for free*, el campo **From**.
 
-> ⚠️ **No subir el Auth Token a GitHub.** Antes de hacer commit, cambia el valor por `PON_AQUI_TU_AUTH_TOKEN`. Si se llega a subir, genera un token nuevo en Twilio.
+> ⚠️ **El `application.properties` real no se sube a GitHub** (está en `.gitignore`) porque contiene el Auth Token. En el repositorio solo está **`application.properties.example`**, una plantilla con valores de ejemplo.
+>
+> **Para ejecutar el servicio:** copia la plantilla y pon tus credenciales de Twilio.
+>
+> ```bash
+> cp src/main/resources/application.properties.example src/main/resources/application.properties
+> ```
+>
+> Si algún token se llega a subir, genera uno nuevo en Twilio.
 
 ---
 
